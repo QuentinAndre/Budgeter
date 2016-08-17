@@ -15,8 +15,6 @@ Purpose
 
 Budgeter is a minimal-functionality budgeting tool that can be used to investigate people's financial decision making.
 The key functionality of the tool is to provide people with different types of income, and to restrict the type of purchases they can make with each income type.
-![Preview](https://s4.postimg.io/l6esht57v/Budgeter_Preview.png)
-
 
 The present version features two types of income (A general account, and a supplementary fund), and three different types of purchases (Groceries, Transportation and Leisure).
 * The general account can be used to make any type of purchase.
@@ -64,10 +62,7 @@ In Qualtrics
 
 1. Create a new survey.
 2. In the "Survey Flow" section, click "Add Below", then "Embedded Data":
-    A. Create the following fields:
-.. image:: https://s4.postimg.io/56gb22v4b/Embedded_Data.png
-    :align: center
-    :alt: Preview
+    A. Set the following Embedded Data fields to 0: "FoodValue", "TransportValue", "LeisureValue", "FoodHistory", "TransportHistory", "LeisureHistory", "FoodClicks", "TransportClicks", "LeisureClicks", "TaskDuration".
     B. Add three other Embedded Data fields with the values that you want for "FUND_AMOUNT", "FUND_TYPE", and "MIN_SPEND".
 3. In the "Look and Feel" section of the survey:
     A. Select the "Blank (For Styling)" stylesheet
