@@ -23,6 +23,7 @@ The present version features two types of income (A general account, and a suppl
 * The supplementary fund can, depending on the configuration of the game, be used only for Groceries, only for Transportation, or for any kind of purchase.
 
 The tool records the final allocation of budget, the number of clicks in each budget category, and all the intermediary budget allocations.
+
 Content
 =======
 
@@ -50,6 +51,7 @@ Stand Alone
 --------
 Just open **Budgeter.html** in your favorite browser and start playing!
 The following parameters can be edited in the Javascript file:
+
 * FUND_TYPE: The type of fund.
  * "Money" for an unrestricted fund (can be spent in all three categories)
  * "Food" for a food-restricted fund (can be spent only on groceries)
@@ -63,7 +65,9 @@ In Qualtrics
 1. Create a new survey.
 2. In the "Survey Flow" section, click "Add Below", then "Embedded Data":
     A. Create the following fields:
-![EmbeddedData](https://s4.postimg.io/56gb22v4b/Embedded_Data.png)
+.. image:: https://s4.postimg.io/56gb22v4b/Embedded_Data.png
+    :align: center
+    :alt: Preview
     B. Add three other Embedded Data fields with the values that you want for "FUND_AMOUNT", "FUND_TYPE", and "MIN_SPEND".
 3. In the "Look and Feel" section of the survey:
     A. Select the "Blank (For Styling)" stylesheet
