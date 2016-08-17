@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Budget Manager</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="row match-my-cols">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Budget Summary</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table" id="tablebudget">
+                        <tbody>
+                        <tr>
+                            <th style="border: 0">&nbsp;</th>
+                            <th style="border: 0">Account</th>
+                            <th style="border: 0"><span id="accountname">&nbsp;</span></th>
+                        </tr>
+                        <tr class="success">
+                            <td>Paycheck</td>
+                            <td>+ $1,000</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="success">
+                            <td><span id="paymentname">&nbsp;</span></td>
+                            <td>&nbsp;</td>
+                            <td>+ <span id="paymentamount">&nbsp;</span></td>
+                        </tr>
+                        <tr class="danger">
+                            <td>Rent + Utilities</td>
+                            <td>- $700</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                        <tr class="danger">
+                            <td>Groceries</td>
+                            <td><span id="foodfromacc">&nbsp;</span></td>
+                            <td><span id="foodfromfund">&nbsp;</span></td>
+                        </tr>
+                        <tr class="danger">
+                            <td>Transportation</td>
+                            <td><span id="transfromacc">&nbsp;</span></td>
+                            <td><span id="transfromfund">&nbsp;</span></td>
+                        </tr>
+                        <tr class="danger">
+                            <td>Leisure</td>
+                            <td><span id="leisfromacc">&nbsp;</span></td>
+                            <td><span id="leisfromfund">&nbsp;</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>Balance</b></td>
+                            <td><b><span id="accbalance">&nbsp;</span></b></td>
+                            <td><b><span id="fundbalance">&nbsp;</span></b></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Groceries</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row marginbottom">
+                        <div class="col-md-4">Min. Costs</div>
+                        <div class="col-md-4">&nbsp;</div>
+                        <div class="col-md-4 rightalign">Max. Pleasure</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-10">
+                            <div id="food"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Transportation</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row marginbottom">
+                        <div class="col-md-4">Min. Costs</div>
+                        <div class="col-md-4">&nbsp;</div>
+                        <div class="col-md-4 rightalign">Max. Pleasure</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-10">
+                            <div id="transport"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Leisure</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row marginbottom">
+                        <div class="col-md-4">Min. Costs</div>
+                        <div class="col-md-4">&nbsp;</div>
+                        <div class="col-md-4 rightalign">Max. Pleasure</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-1">&nbsp;</div>
+                        <div class="col-md-10">
+                            <div id="leisure"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div id="budgetcheck" class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Budget Status: <span id="budgstatus">&nbsp;</span></h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div id="valbudget">Validate</div>
+                        </div>
+                        <div class="col-md-10" id="budgtext">&nbsp;
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1">&nbsp;</div>
+    </div>
+</div>
+</body>
+</html>

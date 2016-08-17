@@ -1,0 +1,54 @@
+.rightalign {
+    text-align: right;
+}
+.marginbottom {
+    margin-bottom: 5px;
+}
+
+.row.match-my-cols {
+    overflow: hidden;
+}
+
+.row.match-my-cols [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+#food, #transport, #leisure {
+    float: left;
+    clear: both;
+    width: 100%;
+}
+#valbudget {
+    margin: auto;
+    width: 100%;
+}
+
+#budgtext {
+     padding: 0.4em 1em;
+}
+
+
+#food .ui-slider-range {
+    background: #ef2929;
+}
+
+#food .ui-slider-handle {
+    border-color: #ef2929;
+}
+
+#transport .ui-slider-range {
+    background: #8ae234;
+}
+
+#transport .ui-slider-handle {
+    border-color: #8ae234;
+}
+
+#leisure .ui-slider-range {
+    background: #729fcf;
+}
+
+#leisure .ui-slider-handle {
+    border-color: #729fcf;
+}
