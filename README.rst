@@ -63,14 +63,14 @@ In Qualtrics
 --------
 
 1. Create a new survey.
-2. In the "Survey Flow" section, click "Add Below", then "Embedded Data":
+2. In the "Survey Flow" section, click "Add Below", then "Embedded Data"...
     A. Set the following Embedded Data fields to 0: "FoodValue", "TransportValue", "LeisureValue", "FoodHistory", "TransportHistory", "LeisureHistory", "FoodClicks", "TransportClicks", "LeisureClicks", "TaskDuration".
     B. Add three other Embedded Data fields with the values that you want for "FUND_AMOUNT", "FUND_TYPE", and "MIN_SPEND".
-3. In the "Look and Feel" section of the survey:
+3. In the "Look and Feel" section of the survey...
     A. Select the "Blank (For Styling)" stylesheet
     B. In the "Advanced" Tab, click the "Add Custom CSS" and paste the content of the "Budgeter.css" file in it.
     C. In the "Advanced" Tab, paste the content of the "Header.txt" file in the "Header" text field.
-4. Create a new "Text/Graphic" question, and:
+4. Create a new "Text/Graphic" question, and...
     A. Click the "HTML View" button, and paste the content of the "BudgeterQualtrics.html" file in the windows.
     B. Click the "Gear" button, then select "Add Javascript". Paste the content of the "BudgeterQualtrics.js" in the windows.
 5. Preview the survey in Qualtrics: everything should be working properly!
