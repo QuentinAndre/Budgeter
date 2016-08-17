@@ -17,6 +17,7 @@ Budgeter is a minimal-functionality budgeting tool that can be used to investiga
 The key functionality of the tool is to provide people with different types of income, and to restrict the type of purchases they can make with each income type.
 
 The present version features two types of income (A general account, and a supplementary fund), and three different types of purchases (Groceries, Transportation and Leisure).
+
 * The general account can be used to make any type of purchase.
 * The supplementary fund can, depending on the configuration of the game, be used only for Groceries, only for Transportation, or for any kind of purchase.
 
@@ -41,11 +42,12 @@ Installation
 Dependencies
 ------------
 This code uses the following libraries from an online CDN. No installation is required.
+
 * JQuery UI 1.12: https://code.jquery.com/ui/1.12.0/jquery-ui.js
 * JQuery 1.12.4: https://code.jquery.com/jquery-1.12.4.js
 * Bootstrap 3.0: http://getbootstrap.com/getting-started/#download
 
-Stand Alone
+Stand-Alone Version
 --------
 Just open **Budgeter.html** in your favorite browser and start playing!
 The following parameters can be edited in the Javascript file:
